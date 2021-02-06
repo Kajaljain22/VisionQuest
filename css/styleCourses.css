@@ -1,6 +1,6 @@
 @font-face {
     font-family: myFont;
-    src: url(ProductSans-Regular.ttf);
+    src: url(../assets/ProductSans-Regular.ttf);
   }
   html{
     overflow-x: hidden;

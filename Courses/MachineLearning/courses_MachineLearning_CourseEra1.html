@@ -12,8 +12,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <script>
-    var v = [1,1,1,1,1];
-    console.log(v[1]);
+    var v = [1,1,1,1,1,1,1,1,1,1];
+
     $(document).ready(function(){
       $("#ch1").click(function(){
         $("#page1").slideToggle("slow");
@@ -46,6 +46,45 @@
       });
     });
 
+    $(document).ready(function(){
+      $("#ch5").click(function(){
+        $("#page5").slideToggle("slow");
+        $("#plus5").toggleClass("fa fa-minus");
+        v[5] ^= 1;
+      });
+    });
+
+    $(document).ready(function(){
+      $("#ch6").click(function(){
+        $("#page6").slideToggle("slow");
+        $("#plus6").toggleClass("fa fa-minus");
+        v[6] ^= 1;
+      });
+    });
+
+    $(document).ready(function(){
+      $("#ch7").click(function(){
+        $("#page7").slideToggle("slow");
+        $("#plus7").toggleClass("fa fa-minus");
+        v[7] ^= 1;
+      });
+    });
+
+    $(document).ready(function(){
+      $("#ch8").click(function(){
+        $("#page8").slideToggle("slow");
+        $("#plus8").toggleClass("fa fa-minus");
+        v[8] ^= 1;
+      });
+    });
+
+    $(document).ready(function(){
+      $("#ch9").click(function(){
+        $("#page9").slideToggle("slow");
+        $("#plus9").toggleClass("fa fa-minus");
+        v[9] ^= 1;
+      });
+    });
 
     var allClose = 1;
     $(document).ready(function(){
@@ -55,6 +94,11 @@
             $("#page2").slideDown("slow");
             $("#page3").slideDown("slow");
             $("#page4").slideDown("slow");
+            $("#page5").slideDown("slow");
+            $("#page6").slideDown("slow");
+            $("#page7").slideDown("slow");
+            $("#page8").slideDown("slow");
+            $("#page9").slideDown("slow");
 
             if(v[1]){
               $("#plus1").toggleClass("fa fa-minus");
@@ -76,6 +120,31 @@
               v[4] ^= 1;
             }
 
+            if(v[5]){
+              $("#plus5").toggleClass("fa fa-minus");
+              v[5] ^= 1;
+            }
+
+            if(v[6]){
+              $("#plus6").toggleClass("fa fa-minus");
+              v[6] ^= 1;
+            }
+
+            if(v[7]){
+              $("#plus7").toggleClass("fa fa-minus");
+              v[7] ^= 1;
+            }
+
+            if(v[8]){
+              $("#plus8").toggleClass("fa fa-minus");
+              v[8] ^= 1;
+            }
+
+            if(v[9]){
+              $("#plus9").toggleClass("fa fa-minus");
+              v[9] ^= 1;
+            }
+
             allClose = 0;
             $("#all").html("<small>Collapse all</small>");
         }
@@ -84,6 +153,11 @@
           $("#page2").slideUp("slow");
           $("#page3").slideUp("slow");
           $("#page4").slideUp("slow");
+          $("#page5").slideUp("slow");
+          $("#page6").slideUp("slow");
+          $("#page7").slideUp("slow");
+          $("#page8").slideUp("slow");
+          $("#page9").slideUp("slow");
 
           allClose = 1;
 
@@ -106,6 +180,32 @@
             $("#plus4").toggleClass("fa fa-minus");
             v[4] ^= 1;
           }
+
+          if(v[5] == 0){
+            $("#plus5").toggleClass("fa fa-minus");
+            v[5] ^= 1;
+          }
+
+          if(v[6] == 0){
+            $("#plus6").toggleClass("fa fa-minus");
+            v[6] ^= 1;
+          }
+
+          if(v[7]== 0){
+            $("#plus7").toggleClass("fa fa-minus");
+            v[7] ^= 1;
+          }
+
+          if(v[8] == 0){
+            $("#plus8").toggleClass("fa fa-minus");
+            v[8] ^= 1;
+          }
+
+          if(v[9] == 0){
+            $("#plus9").toggleClass("fa fa-minus");
+            v[9] ^= 1;
+          }
+
           $("#all").html("<small>Expand all</small>");
         }
       });
@@ -169,6 +269,72 @@
       display : none;
     }
 
+
+    #ch5{
+      padding : 5px;
+      text-align : center;
+      background-color : #e5eecc;
+      border : solid 1px #c3c3c3;
+    }
+
+    #page5{
+      background-color : #e5eecc;
+      border : solid 1px #c3c3c3;
+      display : none;
+    }
+
+    #ch6{
+      padding : 5px;
+      text-align : center;
+      background-color : #e5eecc;
+      border : solid 1px #c3c3c3;
+    }
+
+    #page6{
+      background-color : #e5eecc;
+      border : solid 1px #c3c3c3;
+      display : none;
+    }
+
+    #ch7{
+      padding : 5px;
+      text-align : center;
+      background-color : #e5eecc;
+      border : solid 1px #c3c3c3;
+    }
+
+    #page7{
+      background-color : #e5eecc;
+      border : solid 1px #c3c3c3;
+      display : none;
+    }
+
+    #ch8{
+      padding : 5px;
+      text-align : center;
+      background-color : #e5eecc;
+      border : solid 1px #c3c3c3;
+    }
+
+    #page8{
+      background-color : #e5eecc;
+      border : solid 1px #c3c3c3;
+      display : none;
+    }
+
+    #ch9{
+      padding : 5px;
+      text-align : center;
+      background-color : #e5eecc;
+      border : solid 1px #c3c3c3;
+    }
+
+    #page9{
+      background-color : #e5eecc;
+      border : solid 1px #c3c3c3;
+      display : none;
+    }
+
     .card-img-top{
       height: 8vw;
     }
@@ -182,7 +348,7 @@
 
 <!-- Navbar starts-->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="..\page1.html"><img src="FullStackImages\logo.jpg" width="50" height="30" class="d-inline-block align-top" alt="VisionQuest">
+  <a class="navbar-brand" href="..\..\page1.html"><img src="MachineLearningImages\logo.jpg" width="50" height="30" class="d-inline-block align-top" alt="VisionQuest">
   VisionQuest
   </a>
 
@@ -194,32 +360,32 @@
 
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active" id="shift">
-       <a class="nav-link" href="..\page1.html"><i class="fas fa-home" style='font-size:24px;color:#D80000;'></i>Home</a>
+       <a class="nav-link" href="..\..\page1.html"><i class="fas fa-home" style='font-size:24px;color:#D80000;'></i>Home</a>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="..\career.html"><i class="fas fa-graduation-cap" style='font-size:24px;color:#D80000;'></i>Careers</a>
+        <a class="nav-link" href="#"><i class="fas fa-graduation-cap" style='font-size:24px;color:#D80000;'></i>Careers</a>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link " href="..\Courses\allcourses.html"><i class="fas fa-book" style='font-size:24px;color:#D80000;'></i>Courses</a>
+        <a class="nav-link " href="..\..\allcourses.html"><i class="fas fa-book" style='font-size:24px;color:#D80000;'></i>Courses</a>
       </li>
 
       <li class="nav-item active dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-sign-in-alt" style='font-size:24px;color:#D80000;'></i>Login</a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="..\signup_page.html">Sign Up</a>
+          <a class="dropdown-item" href="..\..\signup_page.html">Sign Up</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="..\login_page.html">Login</a>
+          <a class="dropdown-item" href="..\..\login_page.html">Login</a>
         </div>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="..\about.html"><i class="fas fa-user" style='font-size:24px;color:#D80000;'></i>About Us</a>
+        <a class="nav-link" href="..\..\about.html"><i class="fas fa-user" style='font-size:24px;color:#D80000;'></i>About Us</a>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="..\contact.html"><i class="fas fa-phone-square" style='font-size:24px;color:#D80000;'></i>Contact Us</a>
+        <a class="nav-link" href="..\..\contact.html"><i class="fas fa-phone-square" style='font-size:24px;color:#D80000;'></i>Contact Us</a>
       </li>
     </ul>
 
@@ -230,24 +396,24 @@
 <!-- courses and its stream -->
   <section id = "a1" class="text-center bg-light mb-0">
     <ul class = "breadcrumb pl-3 pt-0 pb-0 m-0">
-      <li class = "breadcrumb-item"><a href="..\Courses\allcourses.html" style = "text-decoration : none;" class = "text-danger">Courses</a></li>
-      <li class="breadcrumb-item">Full Stack</li>
-      <li class="breadcrumb-item active">Full-Stack Web Development with React Specialization</li>
+      <li class = "breadcrumb-item"><a href="..\..\allcourses.html" style = "text-decoration : none;" class = "text-danger">Courses</a></li>
+      <li class="breadcrumb-item active">Machine Learning</li>
+      <li class="breadcrumb-item active">Machine Learning</li>
     </ul>
   </section>
 <!-- courses and its stream ends -->
 
 <!-- course name and ratings -->
   <section id = "a2" class="text-center pt-5 pb-5 bg-dark text-white">
-    <h1 class = "text-white pl-5 pr-5 pt-5 pb-2 mb-1">Full-Stack Web Development with React Specialization</h1>
+    <h1 class = "text-white pl-5 pr-5 pt-5 pb-2 mb-1">Machine Learning</h1>
     <i class="fas fa-star mt-1" style = "color : gold"></i>
     <i class="fas fa-star mt-1" style = "color : gold"></i>
     <i class="fas fa-star mt-1" style = "color : gold"></i>
     <i class="fas fa-star mt-1" style = "color : gold"></i>
     <i class="fas fa-star-half-alt" style = "color : gold"></i>
-    <span class = "mr-2"><small>4.7 (692 ratings)</small></span>
-    <span><small>13,869 students enrolled</small></span>
-    <p class = "p-0 m-0"><small>Offered by <i>The Hong Kong University of Science and Technology</i></small></p>
+    <span class = "mr-2"><small>4.9 (29,127 ratings)</small></span>
+    <span><small>118,629 students enrolled</small></span>
+    <p class = "p-0 m-0"><small>Offered by <i>Stanford</i></small></p>
     <small><i class="fas fa-comment"></i><span class = "ml-1">English</span><i class="fas fa-closed-captioning ml-2"></i><span class = "ml-1">English, French, Spanish</span></small><br>
     <small  class = "mb-0 pb-0">Financial aid available</small>
   </section>
@@ -266,15 +432,18 @@
           <h6 class="text-muted mt-3 mb-4">WHAT YOU WILL LEARN</h6>
           <div class = "row">
             <div class="col-md-6">
-              <p><i class="fas fa-check mr-3 pd-3"></i>Completely refilmed for 2019</p>
-              <p><i class="fas fa-check mr-3"></i>Create Express web servers and APIs</p>
-              <p><i class="fas fa-check mr-3"></i>Use cutting-edge ES6/ES7 JavaScript</p>
-              <p><i class="fas fa-check mr-3"></i>Create real-time web apps with SocketIO</p>
+              <p><i class="fas fa-check mr-3"></i>Make accurate predictions</p>
+              <p><i class="fas fa-check mr-3"></i>Have a great intuition of many Machine Learning models</p>
+              <p><i class="fas fa-check mr-3"></i>Make robust Machine Learning models</p>
+              <p><i class="fas fa-check mr-3"></i>Use Machine Learning for personal purpose</p>
+              <p><i class="fas fa-check mr-3"></i>Handle specific topics like Reinforcement Learning, NLP and Deep Learning</p>
             </div>
             <div class="col-md-6">
-              <p><i class="fas fa-check mr-3"></i>Build, test, and launch Node apps</p>
-              <p><i class="fas fa-check mr-3"></i>Store data with Mongoose and MongoDB</p>
-              <p><i class="fas fa-check mr-3"></i>Deploy your Node apps to production</p>
+              <p><i class="fas fa-check mr-3 pd-3"></i>Master Machine Learning on Python & R</p>
+              <p><i class="fas fa-check mr-3"></i>Make powerful analysis</p>
+              <p><i class="fas fa-check mr-3"></i>Handle advanced techniques like Dimensionality Reduction</p>
+              <p><i class="fas fa-check mr-3"></i>Create strong added value to your business</p>
+              <p><i class="fas fa-check mr-3"></i>Know which Machine Learning model to choose for each type of problem</p>
             </div>
           </div>
         </div>
@@ -286,10 +455,10 @@
         <div class="col-md-12 border rounded mt-4">
           <h6 class="text-muted mt-3 mb-4">SKILLS YOU WILL GAIN</h6>
           <div class="continer pb-4">
-            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Bootstrap (Front-End Framework)</button>
-            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Node.JS</button>
-            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">React (Javascript Library)</button>
-            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Redux</button>
+            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Logistic Regression</button>
+            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Artificial Neural Network</button>
+            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Machine Learning (ML) Algorithms</button>
+            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Machine Learning</button>
           </div>
         </div>
       </div>
@@ -297,15 +466,12 @@
     <!-- skills you'll gain ends-->
 
     <!-- pre-requisites starts -->
-
-    <div class="row">
+<div class="row">
       <div class = "col-md-12 mt-4">
       <h4 class="col-md-6 mx-4 pl-0 display-4">Pre-requisites</h4>
-        <li class = "lead">You need to have a good working knowledge of HTML, CSS and JavaScript</li>
-        <li class = "lead">Understanding of functional programming</li>
+        <li class = "lead">Sufficient knowledge of Probability and Statistics.</li>
       </div>
     </div>
-
     <!-- pre-requisites ends -->
 
     <!-- Course content starts -->
@@ -313,7 +479,7 @@
       <div class="row">
         <div class = "col-md-12 mt-4">
         <h3 class = "mb-2">Course Content<span class="ml-2" id = "all" style="cursor: pointer;"><small>Expand all</small></span></h3>
-          <div id="ch1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus1"></i></small>Introduction to this course</div>
+          <div id="ch1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus1"></i></small>Introduction</div>
           <div id="page1">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Welcome to Front-End Web Development with React</span><span class="badge badge-primary badge-pill">10m</span></li>
@@ -340,7 +506,7 @@
             </ul>
           </div>
 
-          <div id="ch2" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus2"></i></small>React Router and Single Page Applications</div>
+          <div id="ch2" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus2"></i></small>Linear Regression with Multiple Variables</div>
           <div id="page2">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Presentational and Container Components</span><span class="badge badge-primary badge-pill">6m</span></li>
@@ -360,7 +526,7 @@
             </ul>
           </div>
 
-          <div id="ch3" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus3"></i></small>React Forms, Flow Architecture and Introduction to Redux</div>
+          <div id="ch3" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus3"></i></small>Logistic Regression</div>
           <div id="page3">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Controlled Forms</span><span class="badge badge-primary badge-pill">5m</span></li>
@@ -379,7 +545,7 @@
             </ul>
           </div>
 
-          <div id="ch4" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus4"></i></small>More Redux and Client-Server Communication</div>
+          <div id="ch4" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus4"></i></small>Neural Networks: Representation</div>
           <div id="page4">
             <ul class="list-group">
               <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Redux Actions</span><span class="badge badge-primary badge-pill">8m</span></li>
@@ -405,6 +571,81 @@
             </ul>
           </div>
 
+          <div id="ch5" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus5"></i></small>Neural Networks: Learning</div>
+          <div id="page5">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Section Intro: Debugging Node.js</span><span class="badge badge-primary badge-pill">6m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Debugging Node.js</span><span class="badge badge-primary badge-pill">15m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Error Messages</span><span class="badge badge-primary badge-pill">5m</span></li>
+            </ul>
+          </div>
+
+          <div id="ch6" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus6"></i></small>Advice for Applying Machine Learning</div>
+          <div id="page6">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Section Intro: Asynchronous Node.js </span><span class="badge badge-primary badge-pill">14m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Asynchronous Basics</span><span class="badge badge-primary badge-pill">6m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Call Stack, Callback Queue, and Event Loop</span><span class="badge badge-primary badge-pill">7m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Making HTTP Requests</span><span class="badge badge-primary badge-pill">9m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Customizing HTTP Requests</span><span class="badge badge-primary badge-pill">8m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>An HTTP Request Challenge</span><span class="badge badge-primary badge-pill">11m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Handling Errors</span><span class="badge badge-primary badge-pill">16m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Callback Abstraction</span><span class="badge badge-primary badge-pill">16m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Callback Abstraction Challenge</span><span class="badge badge-primary badge-pill">18m</span></li>
+            </ul>
+          </div>
+
+          <div id="ch7" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus7"></i></small>Support Vector Machines</div>
+          <div id="page7">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Create Project</span><span class="badge badge-primary badge-pill">4m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>List components</span><span class="badge badge-primary badge-pill">7m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Fetch data</span><span class="badge badge-primary badge-pill">14m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>CORS</span><span class="badge badge-primary badge-pill">8m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Details component</span><span class="badge badge-primary badge-pill">8m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Passing data between components</span><span class="badge badge-primary badge-pill">7m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Rating</span><span class="badge badge-primary badge-pill">9m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>First POST method</span><span class="badge badge-primary badge-pill">18m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Update View</span><span class="badge badge-primary badge-pill">13m</span></li>
+            </ul>
+          </div>
+
+          <div id="ch8" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus8"></i></small>Unsupervised Learning</div>
+          <div id="page8">
+            <ul class="list-group border rounded">
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Framework overview</span><span class="badge badge-primary badge-pill">6m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Expo</span><span class="badge badge-primary badge-pill">10m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Running your app</span><span class="badge badge-primary badge-pill">8m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Files overview</span><span class="badge badge-primary badge-pill">12m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Components, props and state</span><span class="badge badge-primary badge-pill">13m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Styling</span><span class="badge badge-primary badge-pill">14m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Flex</span><span class="badge badge-primary badge-pill">6m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>User inputs</span><span class="badge badge-primary badge-pill">8m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Lists</span><span class="badge badge-primary badge-pill">12m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Images</span><span class="badge badge-primary badge-pill">7m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Platform specific code</span><span class="badge badge-primary badge-pill">9m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Icon and splash screen</span><span class="badge badge-primary badge-pill">7m</span></li>
+            </ul>
+          </div>
+
+          <div id="ch9" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus9"></i></small>Anomaly Detection</div>
+          <div id="page9">
+            <ul class="list-group border rounded">
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Initialising project</span><span class="badge badge-primary badge-pill">9m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Getting data from Django</span><span class="badge badge-primary badge-pill">12m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Styling list</span><span class="badge badge-primary badge-pill">11m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Enable Navigation</span><span class="badge badge-primary badge-pill">8m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Passing params</span><span class="badge badge-primary badge-pill">6m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Icons for rating</span><span class="badge badge-primary badge-pill">5m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Top bar</span><span class="badge badge-primary badge-pill">14m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Edit component</span><span class="badge badge-primary badge-pill">07:11</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Forms</span><span class="badge badge-primary badge-pill">11m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>PUT method</span><span class="badge badge-primary badge-pill">7m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Fetch from localhost</span><span class="badge badge-primary badge-pill">12m</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Rate UI</span><span class="badge badge-primary badge-pill">8m</span></li>
+            </ul>
+          </div>
+
         </div>
       </div>
 
@@ -423,10 +664,10 @@
       <h4 class="pl-0 py-2">Students also bought</h4>
         <div class="card-deck">
             <div class="card">
-              <img src="FullStackImages\React&Django.jpg" alt="React&Django" class="card-img-top">
+              <img src="MachineLearningImages\udemy1.png" alt="MachineLearning" class="card-img-top">
               <div class="card-body">
-                <h6 class="card-title mb-0">Full Stack Development (React & Django)</h6>
-                <p class="card-text text-muted mt-0 mb-0"><small>Krystian Czekalski</small></p>
+                <h6 class="card-title mb-0">Machine Learning with Python & R In Data Science</h6>
+                <p class="card-text text-muted mt-0 mb-0"><small>Kirill Eremenko, Hadelin de Ponteves, DataScience Team</small></p>
                 <p class="card-text text-muted mt-0"><small><i>Course from Udemy</i></small></p>
                 <small>
                   <i class="fas fa-star mt-1" style = "color : gold"></i>
@@ -435,15 +676,32 @@
                   <i class="fas fa-star mt-1" style = "color : gold"></i>
                   <i class="fas fa-star-half-alt" style = "color : gold"></i>
                 </small>
-                <span class = "mr-2"><small>4.4 (130)</small></span>
-                <a href="courses_FullStack_React&Django.html" class="btn btn-outline-danger mt-2" style = "border-radius : 1.875rem">See Course</a>
+                <span class = "mr-2"><small>4.5 (96,730)</small></span>
+                <a href="courses_MachineLearning_Udemy1.html" class="btn btn-outline-danger mt-2" style = "border-radius : 1.875rem">See Course</a>
               </div>
             </div>
             <div class="card">
-              <img src="FullStackImages\Angular&Django.png" alt="Angular&Django" class="card-img-top">
+              <img src="MachineLearningImages\deep_learning.jpg" alt="Deep Learning" class="card-img-top">
               <div class="card-body">
-                <h6 class="card-title mb-0">Full Stack Development (Angular, Django)</h6>
-                <p class="card-text text-muted mt-0 mb-0"><small>Krystian Czekalski</small></p>
+                <h6 class="card-title mb-0">Deep Learning : Hands-On Artificial Neural Networks</h6>
+                <p class="card-text text-muted mt-0 mb-0"><small><i>Kirill Eremenko, Hadelin de Ponteves, DataScience Team</i></small></p>
+                <p class="card-text text-muted mt-0"><small><i>Course from Udemy</i></small></p>
+                <small>
+                  <i class="fas fa-star mt-1" style = "color : gold"></i>
+                  <i class="fas fa-star mt-1" style = "color : gold"></i>
+                  <i class="fas fa-star mt-1" style = "color : gold"></i>
+                  <i class="fas fa-star mt-1" style = "color : gold"></i>
+                  <i class="fas fa-star-half-alt" style = "color : gold"></i>
+                </small>
+                <span class = "mr-2"><small>4.5 (18,902)</small></span>
+                <a href="courses_MachineLearning_Udemy_DeepLearning.html" class="btn btn-outline-danger mt-2" style = "border-radius : 1.875rem">See Course</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="MachineLearningImages\machinelearning4.jpg" alt="MachineLearning" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title mb-0">Machine Learning, Data Science and Deep Learning with Python</h6>
+                <p class="card-text text-muted mt-0 mb-0"><small>Sundog Education by Frank Kane</small></p>
                 <p class="card-text text-muted mt-0"><small><i>Course from Udemy</i></small></p>
                 <small>
                   <i class="fas fa-star mt-1" style = "color : gold"></i>
@@ -452,25 +710,8 @@
                   <i class="fas fa-star mt-1" style = "color : gold"></i>
                 <i class="fas fa-star-half-alt" style = "color : gold"></i>
                 </small>
-                <span class = "mr-2"><small>4.3 (259)</small></span>
-                <a href="FullStackImages\courses_FullStack_Angular&Django.html" class="btn btn-outline-danger mt-2" style = "border-radius : 1.875rem">See Course</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="FullStackImages\NodeJSDevelopment.jpg" alt="NodeCrashCourse" class="card-img-top">
-              <div class="card-body">
-                <h6 class="card-title mb-0">Full Stack Development Using NodeJS</h6>
-                <p class="card-text text-muted mt-0 mb-0"><small><i>John Purcell</i></small></p>
-                <p class="card-text text-muted mt-0"><small><i>Course from Udemy</i></small></p>
-                <small>
-                  <i class="fas fa-star mt-1" style = "color : gold"></i>
-                  <i class="fas fa-star mt-1" style = "color : gold"></i>
-                  <i class="fas fa-star mt-1" style = "color : gold"></i>
-                  <i class="fas fa-star mt-1" style = "color : gold"></i>
-                  <i class="fas fa-star-half-alt" style = "color : gold"></i>
-                </small>
-                <span class = "mr-2"><small>4.7 (27,192)</small></span>
-                <a href="courses_FullStack_NodeJs.html" class="btn btn-outline-danger mt-2" style = "border-radius : 1.875rem">See Course</a>
+                <span class = "mr-2"><small>4.5 (16,931)</small></span>
+                <a href="courses_MachineLearning_Udemy2.html" class="btn btn-outline-danger mt-2" style = "border-radius : 1.875rem">See Course</a>
               </div>
             </div>
         </div>
@@ -690,14 +931,14 @@
     <!-- Details on sticky card starts-->
     <div class="col-md-2">
       <div class="card sticky-top">
-        <img src="FullStackImages\ReactSpecialization.png" alt="ReactSpecialization" class="card-img-top">
+        <img src="MachineLearningImages\courseera1.jpg" alt="Macine Learning" class="card-img-top">
         <div class="card-body">
           <div class = "row">
             <div class="col-md-10"></div>
-            <div class="col-md-2"><h4 class="card-title float-right">₹12,000</h4></div>
+            <div class="col-md-2"><h4 class="card-title float-right">₹4,178</h4></div>
           </div>
           <!-- <a href="#" class="btn d-block btn-outline-primary mb-2">Add to cart</a> -->
-          <a href="https://www.coursera.org/learn/front-end-react" target = "_blank" class="btn d-block btn-outline-danger">Buy Now</a>
+          <a href="https://www.coursera.org/learn/machine-learning" target = "_blank" class="btn d-block btn-outline-danger">Buy Now</a>
           <p class= "text-center" style= "font-size: 14px;"><small>Financial aid available<small></p>
           <p class = "card-text mb-0" style = "font-size : 16px;">This course includes</p>
             <li class = "card-text" style = "font-size : 12px;">100% online videos</li>

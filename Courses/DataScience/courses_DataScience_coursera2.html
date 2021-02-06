@@ -54,38 +54,6 @@
       });
     });
 
-    $(document).ready(function(){
-      $("#ch6").click(function(){
-        $("#page6").slideToggle("slow");
-        $("#plus6").toggleClass("fa fa-minus");
-        v[6] ^= 1;
-      });
-    });
-
-    $(document).ready(function(){
-      $("#ch7").click(function(){
-        $("#page7").slideToggle("slow");
-        $("#plus7").toggleClass("fa fa-minus");
-        v[7] ^= 1;
-      });
-    });
-
-    $(document).ready(function(){
-      $("#ch8").click(function(){
-        $("#page8").slideToggle("slow");
-        $("#plus8").toggleClass("fa fa-minus");
-        v[8] ^= 1;
-      });
-    });
-
-    $(document).ready(function(){
-      $("#ch9").click(function(){
-        $("#page9").slideToggle("slow");
-        $("#plus9").toggleClass("fa fa-minus");
-        v[9] ^= 1;
-      });
-    });
-
     var allClose = 1;
     $(document).ready(function(){
       $("#all").click(function(){
@@ -95,10 +63,6 @@
             $("#page3").slideDown("slow");
             $("#page4").slideDown("slow");
             $("#page5").slideDown("slow");
-            $("#page6").slideDown("slow");
-            $("#page7").slideDown("slow");
-            $("#page8").slideDown("slow");
-            $("#page9").slideDown("slow");
 
             if(v[1]){
               $("#plus1").toggleClass("fa fa-minus");
@@ -125,26 +89,6 @@
               v[5] ^= 1;
             }
 
-            if(v[6]){
-              $("#plus6").toggleClass("fa fa-minus");
-              v[6] ^= 1;
-            }
-
-            if(v[7]){
-              $("#plus7").toggleClass("fa fa-minus");
-              v[7] ^= 1;
-            }
-
-            if(v[8]){
-              $("#plus8").toggleClass("fa fa-minus");
-              v[8] ^= 1;
-            }
-
-            if(v[9]){
-              $("#plus9").toggleClass("fa fa-minus");
-              v[9] ^= 1;
-            }
-
             allClose = 0;
             $("#all").html("<small>Collapse all</small>");
         }
@@ -154,10 +98,6 @@
           $("#page3").slideUp("slow");
           $("#page4").slideUp("slow");
           $("#page5").slideUp("slow");
-          $("#page6").slideUp("slow");
-          $("#page7").slideUp("slow");
-          $("#page8").slideUp("slow");
-          $("#page9").slideUp("slow");
 
           allClose = 1;
 
@@ -184,26 +124,6 @@
           if(v[5] == 0){
             $("#plus5").toggleClass("fa fa-minus");
             v[5] ^= 1;
-          }
-
-          if(v[6] == 0){
-            $("#plus6").toggleClass("fa fa-minus");
-            v[6] ^= 1;
-          }
-
-          if(v[7]== 0){
-            $("#plus7").toggleClass("fa fa-minus");
-            v[7] ^= 1;
-          }
-
-          if(v[8] == 0){
-            $("#plus8").toggleClass("fa fa-minus");
-            v[8] ^= 1;
-          }
-
-          if(v[9] == 0){
-            $("#plus9").toggleClass("fa fa-minus");
-            v[9] ^= 1;
           }
 
           $("#all").html("<small>Expand all</small>");
@@ -283,58 +203,6 @@
       display : none;
     }
 
-    #ch6{
-      padding : 5px;
-      text-align : center;
-      background-color : #e5eecc;
-      border : solid 1px #c3c3c3;
-    }
-
-    #page6{
-      background-color : #e5eecc;
-      border : solid 1px #c3c3c3;
-      display : none;
-    }
-
-    #ch7{
-      padding : 5px;
-      text-align : center;
-      background-color : #e5eecc;
-      border : solid 1px #c3c3c3;
-    }
-
-    #page7{
-      background-color : #e5eecc;
-      border : solid 1px #c3c3c3;
-      display : none;
-    }
-
-    #ch8{
-      padding : 5px;
-      text-align : center;
-      background-color : #e5eecc;
-      border : solid 1px #c3c3c3;
-    }
-
-    #page8{
-      background-color : #e5eecc;
-      border : solid 1px #c3c3c3;
-      display : none;
-    }
-
-    #ch9{
-      padding : 5px;
-      text-align : center;
-      background-color : #e5eecc;
-      border : solid 1px #c3c3c3;
-    }
-
-    #page9{
-      background-color : #e5eecc;
-      border : solid 1px #c3c3c3;
-      display : none;
-    }
-
     .card-img-top{
       height: 8vw;
     }
@@ -349,7 +217,7 @@
 
 <!-- Navbar starts-->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="page1.html"><img src="DataScienceImages\logo.jpg" width="50" height="30" class="d-inline-block align-top" alt="VisionQuest">
+  <a class="navbar-brand" href="..\..\page1.html"><img src="DataScienceImages\logo.jpg" width="50" height="30" class="d-inline-block align-top" alt="VisionQuest">
   VisionQuest
   </a>
 
@@ -361,7 +229,7 @@
 
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active" id="shift">
-       <a class="nav-link" href="page1.html"><i class="fas fa-home" style='font-size:24px;color:#D80000;'></i>Home</a>
+       <a class="nav-link" href="..\..\page1.html"><i class="fas fa-home" style='font-size:24px;color:#D80000;'></i>Home</a>
       </li>
 
       <li class="nav-item active">
@@ -369,24 +237,24 @@
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link " href="Sitesh/allcourses.html"><i class="fas fa-book" style='font-size:24px;color:#D80000;'></i>Courses</a>
+        <a class="nav-link " href="..\..\allcourses.html"><i class="fas fa-book" style='font-size:24px;color:#D80000;'></i>Courses</a>
       </li>
 
       <li class="nav-item active dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-sign-in-alt" style='font-size:24px;color:#D80000;'></i>Login</a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="signup_page.html">Sign Up</a>
+          <a class="dropdown-item" href="..\..\signup_page.html">Sign Up</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="login_page.html">Login</a>
+          <a class="dropdown-item" href="..\..\login_page.html">Login</a>
         </div>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="about.html"><i class="fas fa-user" style='font-size:24px;color:#D80000;'></i>About Us</a>
+        <a class="nav-link" href="..\..\about.html"><i class="fas fa-user" style='font-size:24px;color:#D80000;'></i>About Us</a>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="contact.html"><i class="fas fa-phone-square" style='font-size:24px;color:#D80000;'></i>Contact Us</a>
+        <a class="nav-link" href="..\..\contact.html"><i class="fas fa-phone-square" style='font-size:24px;color:#D80000;'></i>Contact Us</a>
       </li>
     </ul>
 
@@ -399,22 +267,22 @@
     <ul class = "breadcrumb pl-3 pt-0 pb-0 m-0">
       <li class = "breadcrumb-item"><a href="#" style = "text-decoration : none;" class = "text-danger">Courses</a></li>
       <li class="breadcrumb-item">Data Science</li>
-      <li class="breadcrumb-item active">IBM Data Science Professional Certificate</li>
+      <li class="breadcrumb-item active">Applied Data Science with Python Specialization</li>
     </ul>
   </section>
 <!-- courses and its stream ends -->
 
 <!-- course name and ratings -->
   <section id = "a2" class="text-center pt-5 pb-5 bg-dark text-white">
-    <h1 class = "text-white pl-5 pr-5 pt-5 pb-2 mb-1">IBM Data Science Professional Certificate</h1>
+    <h1 class = "text-white pl-5 pr-5 pt-5 pb-2 mb-1">Applied Data Science with Python Specialization</h1>
     <i class="fas fa-star mt-1" style = "color : gold"></i>
     <i class="fas fa-star mt-1" style = "color : gold"></i>
     <i class="fas fa-star mt-1" style = "color : gold"></i>
     <i class="fas fa-star mt-1" style = "color : gold"></i>
     <i class="fas fa-star-half-alt" style = "color : gold"></i>
-    <span class = "mr-2"><small>4.7 (8,817 ratings)</small></span>
-    <span><small>87,437 students enrolled</small></span>
-    <p class = "p-0 m-0"><small>Offered by <i>IBM</i></small></p>
+    <span class = "mr-2"><small>4.5 (4,855 ratings)</small></span>
+    <span><small>111,821 students enrolled</small></span>
+    <p class = "p-0 m-0"><small>Offered by <i>University of Michigan</i></small></p>
     <small><i class="fas fa-comment"></i><span class = "ml-1">English</span><i class="fas fa-closed-captioning ml-2"></i><span class = "ml-1">English, French, Spanish</span></small><br>
     <small  class = "mb-0 pb-0">Financial aid available</small>
   </section>
@@ -454,11 +322,10 @@
         <div class="col-md-12 border rounded mt-4">
           <h6 class="text-muted mt-3 mb-4">SKILLS YOU WILL GAIN</h6>
           <div class="continer pb-4">
-            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Data Science</button>
-            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Machine Learning</button>
+            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Text Mining</button>
             <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Python Programming</button>
-            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Data Analysis</button>
-            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Data Visualization (DataViz)</button>
+            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Pandas</button>
+            <button type="button" class = "btn btn-secondary disabled mr-4 mt-1" style = "border-radius : 1.875rem;">Matplotlib</button>
           </div>
         </div>
       </div>
@@ -483,7 +350,7 @@
     <div class="row">
       <div class = "col-md-12 mt-4">
       <h3 class = "mb-2">Course Content<span class="ml-2" id = "all" style="cursor: pointer;"><small>Expand all</small></span></h3>
-        <div id="ch1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus1"></i></small>What is Data Science?</div>
+        <div id="ch1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus1"></i></small>Introduction to Data Science in Python</div>
         <div id="page1">
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Welcome to Front-End Web Development with React</span><span class="badge badge-primary badge-pill">10m</span></li>
@@ -510,7 +377,7 @@
           </ul>
         </div>
 
-        <div id="ch2" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus2"></i></small>Open Source tools for Data Science</div>
+        <div id="ch2" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus2"></i></small>Applied Plotting, Charting & Data Representation in Python</div>
         <div id="page2">
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Presentational and Container Components</span><span class="badge badge-primary badge-pill">6m</span></li>
@@ -530,7 +397,7 @@
           </ul>
         </div>
 
-        <div id="ch3" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus3"></i></small>Data Science Methodology</div>
+        <div id="ch3" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus3"></i></small>Applied Machine Learning in Python</div>
         <div id="page3">
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Controlled Forms</span><span class="badge badge-primary badge-pill">5m</span></li>
@@ -549,7 +416,7 @@
           </ul>
         </div>
 
-        <div id="ch4" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus4"></i></small>Python for Data Science and AI</div>
+        <div id="ch4" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus4"></i></small>Applied Text Mining in Python</div>
         <div id="page4">
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Redux Actions</span><span class="badge badge-primary badge-pill">8m</span></li>
@@ -575,78 +442,12 @@
           </ul>
         </div>
 
-        <div id="ch5" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus5"></i></small>Databases and SQL for Data Science</div>
+        <div id="ch5" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus5"></i></small>Applied Social Network Analysis in Python</div>
         <div id="page5">
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Section Intro: Debugging Node.js</span><span class="badge badge-primary badge-pill">6m</span></li>
             <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Debugging Node.js</span><span class="badge badge-primary badge-pill">15m</span></li>
             <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Error Messages</span><span class="badge badge-primary badge-pill">5m</span></li>
-          </ul>
-        </div>
-
-        <div id="ch6" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus6"></i></small>Data Analysis with Python</div>
-        <div id="page6">
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Section Intro: Asynchronous Node.js </span><span class="badge badge-primary badge-pill">14m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Asynchronous Basics</span><span class="badge badge-primary badge-pill">6m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Call Stack, Callback Queue, and Event Loop</span><span class="badge badge-primary badge-pill">7m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Making HTTP Requests</span><span class="badge badge-primary badge-pill">9m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Customizing HTTP Requests</span><span class="badge badge-primary badge-pill">8m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>An HTTP Request Challenge</span><span class="badge badge-primary badge-pill">11m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Handling Errors</span><span class="badge badge-primary badge-pill">16m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Callback Abstraction</span><span class="badge badge-primary badge-pill">16m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Callback Abstraction Challenge</span><span class="badge badge-primary badge-pill">18m</span></li>
-          </ul>
-        </div>
-
-        <div id="ch7" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus7"></i></small>Data Visualization with Python</div>
-        <div id="page7">
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Create Project</span><span class="badge badge-primary badge-pill">4m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>List components</span><span class="badge badge-primary badge-pill">7m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Fetch data</span><span class="badge badge-primary badge-pill">14m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>CORS</span><span class="badge badge-primary badge-pill">8m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Details component</span><span class="badge badge-primary badge-pill">8m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Passing data between components</span><span class="badge badge-primary badge-pill">7m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Rating</span><span class="badge badge-primary badge-pill">9m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>First POST method</span><span class="badge badge-primary badge-pill">18m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Update View</span><span class="badge badge-primary badge-pill">13m</span></li>
-          </ul>
-        </div>
-
-        <div id="ch8" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus8"></i></small>Machine Learning with Python</div>
-        <div id="page8">
-          <ul class="list-group border rounded">
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Framework overview</span><span class="badge badge-primary badge-pill">6m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Expo</span><span class="badge badge-primary badge-pill">10m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Running your app</span><span class="badge badge-primary badge-pill">8m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Files overview</span><span class="badge badge-primary badge-pill">12m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Components, props and state</span><span class="badge badge-primary badge-pill">13m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Styling</span><span class="badge badge-primary badge-pill">14m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Flex</span><span class="badge badge-primary badge-pill">6m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>User inputs</span><span class="badge badge-primary badge-pill">8m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Lists</span><span class="badge badge-primary badge-pill">12m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Images</span><span class="badge badge-primary badge-pill">7m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Platform specific code</span><span class="badge badge-primary badge-pill">9m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Icon and splash screen</span><span class="badge badge-primary badge-pill">7m</span></li>
-          </ul>
-        </div>
-
-        <div id="ch9" class = "mt-1" style="cursor: pointer;"><small><i class="fas fa-plus float-left pl-3 mt-1" id = "plus9"></i></small>Applied Data Science Capstone</div>
-        <div id="page9">
-          <ul class="list-group border rounded">
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Initialising project</span><span class="badge badge-primary badge-pill">9m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Getting data from Django</span><span class="badge badge-primary badge-pill">12m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Styling list</span><span class="badge badge-primary badge-pill">11m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Enable Navigation</span><span class="badge badge-primary badge-pill">8m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Passing params</span><span class="badge badge-primary badge-pill">6m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Icons for rating</span><span class="badge badge-primary badge-pill">5m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Top bar</span><span class="badge badge-primary badge-pill">14m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Edit component</span><span class="badge badge-primary badge-pill">07:11</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Forms</span><span class="badge badge-primary badge-pill">11m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>PUT method</span><span class="badge badge-primary badge-pill">7m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Fetch from localhost</span><span class="badge badge-primary badge-pill">12m</span></li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"><span><i class = "fa fa-play-circle float-left mr-2 pt-1"></i>Rate UI</span><span class="badge badge-primary badge-pill">8m</span></li>
           </ul>
         </div>
 
@@ -685,10 +486,10 @@
               </div>
             </div>
             <div class="card">
-              <img src="DataScienceImages\image3.png" alt="DataScience" class="card-img-top">
+              <img src="DataScienceImages\image2.jpg" alt="DataScience" class="card-img-top">
               <div class="card-body">
-                <h6 class="card-title mb-0">Applied Data Science with Python Specialization</h6>
-                <p class="card-text text-muted mt-0 mb-0"><small>University of Michigan</small></p>
+                <h6 class="card-title mb-0">IBM Data Science Professional Certificate</h6>
+                <p class="card-text text-muted mt-0 mb-0"><small>IBM</small></p>
                 <p class="card-text text-muted mt-0"><small><i>Course from Coursera</i></small></p>
                 <small>
                   <i class="fas fa-star mt-1" style = "color : gold"></i>
@@ -697,8 +498,8 @@
                   <i class="fas fa-star mt-1" style = "color : gold"></i>
                 <i class="fas fa-star-half-alt" style = "color : gold"></i>
                 </small>
-                <span class = "mr-2"><small>4.5 (4,855)</small></span>
-                <a href="courses_DataScience_coursera2.html" class="btn btn-outline-danger mt-2" style = "border-radius : 1.875rem">See Course</a>
+                <span class = "mr-2"><small>4.7 (8,817)</small></span>
+                <a href="courses_DataScience_coursera1.html" class="btn btn-outline-danger mt-2" style = "border-radius : 1.875rem">See Course</a>
               </div>
             </div>
             <div class="card">
@@ -733,7 +534,7 @@
     </div>
       <div class="row">
         <div class="col-md-3">
-          <p class = "display-4 mb-0 ml-4 pl-3">4.7</p>
+          <p class = "display-4 mb-0 ml-4 pl-3">4.5</p>
           <small class = "ml-4 pl-1">
             <i class="fas fa-star mt-1" style = "color : gold"></i>
             <i class="fas fa-star mt-1" style = "color : gold"></i>
@@ -935,14 +736,14 @@
     <!-- Details on sticky card starts-->
     <div class="col-md-2">
       <div class="card sticky-top">
-        <img src="DataScienceImages\image2.jpg" alt="DataScience" class="card-img-top">
+        <img src="DataScienceImages\image3.png" alt="DataScience" class="card-img-top">
         <div class="card-body">
           <div class = "row">
             <div class="col-md-10"></div>
-            <div class="col-md-2"><h4 class="card-title float-right">₹16,500</h4></div>
+            <div class="col-md-2"><h4 class="card-title float-right">₹21,000</h4></div>
           </div>
           <!-- <a href="#" class="btn d-block btn-outline-primary mb-2">Add to cart</a> -->
-          <a href="https://www.coursera.org/professional-certificates/ibm-data-science" target = "_blank" class="btn d-block btn-outline-danger">Buy Now</a>
+          <a href="https://www.coursera.org/specializations/data-science-python" target = "_blank" class="btn d-block btn-outline-danger">Buy Now</a>
           <p class= "text-center" style= "font-size: 14px;"><small>Financial aid available<small></p>
           <p class = "card-text mb-0" style = "font-size : 16px;">This course includes</p>
             <li class = "card-text" style = "font-size : 12px;">100% online videos</li>
